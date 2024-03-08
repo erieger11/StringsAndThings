@@ -87,10 +87,13 @@ public class StringsAndThings {
          */
         public Integer countTriple (String input){
             int tripleCounter = 0;
+            for (int i = 0; i < input.length()-2; i++) {
 
-            for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(i) == input.charAt(i) +1 && input.charAt(i)+2 == input.charAt(i))
+
+                if (input.charAt(i+1) == input.charAt(i) && input.charAt(i+2) == input.charAt(i))
                     tripleCounter++;
+
+
             }
         return tripleCounter;
         }
